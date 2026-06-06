@@ -1,5 +1,5 @@
 def grade(score):
-    while score in range(0,101):
+    if score <0 and score > 100:
         if score >= 90:
             grade = "A"
         elif score >= 80:
@@ -9,6 +9,8 @@ def grade(score):
         else:
             grade = "F"
         return grade
+    else:
+        return "INVALID"
 
 score = int(input("Enter score:"))
 print("Grade:",grade(score))
