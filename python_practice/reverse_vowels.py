@@ -11,4 +11,4 @@ while left < right:
         i[left],i[right] = i[right],i[left]
         left += 1
         right -= 1
-print("Output:", i)
+print("Output:","".join(i))
